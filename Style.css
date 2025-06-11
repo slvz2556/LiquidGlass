@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: auto;
+    width: 100%;
+    background-color: #000;
+}
+
+.div-background{
+    height: 700vh;
+    position: relative;
+    width: 100%;
+    background-image: url('img2.jpg');
+    background-size: contain;
+}
+
+button{
+    position:fixed;
+    inset:50% auto auto 50%;
+    transform:translate(-50%,-50%);
+    width:20rem;
+    height:20rem;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    border:2px solid transparent;
+    box-shadow:0 0 0 2px rgba(255,255,255,.6),0 16px 32px rgba(0,0,0,.12);
+    backdrop-filter:url(#frosted);
+    -webkit-backdrop-filter:url(#frosted);
+    display:grid;
+    place-items:center;
+    cursor:pointer;
+    outline:0;
+}
+
+button svg{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    justify-self: center;
+    align-self: center;
+    fill:#fff;
+}
